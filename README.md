@@ -9,7 +9,7 @@ API 명세에 맞춰 사용자 데이터를 조회, 검색, 상세 확인, 수�
 
 * **Framework:** Next.js (v14 App Router)
 * **UI:** React (v18)
-* **언어어:** TypeScript
+* **언어:** TypeScript
 * **Styling:** Tailwind CSS (Layout) 및 Material UI (MUI v5 Components)
 * **State 관리:** React Query (TanStack Query v5), React Hooks
 * **Data 호출:** Axios (custom client)
