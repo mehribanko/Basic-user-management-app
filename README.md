@@ -38,49 +38,7 @@ API 명세에 맞춰 사용자 데이터를 조회, 검색, 상세 확인, 수�
 
 ## 4. 프로젝트 구조
 
-danal-user-management/
-├── .storybook/       # Storybook 설정
-├── public/           # 정적 파일 (MSW)
-├── src/
-│   ├── app/          # Next.js App Router
-│   │   ├── api/      # API 라우트 핸들러 (백엔드 proxy)
-│   │   │   ├── users/
-│   │   │   │   ├── route.ts         # GET /api/users
-│   │   │   │   └── [id]/
-│   │   │   │       └── route.ts     # GET, POST, DELETE /api/users/[id]
-│   │   ├── users/    # 사용자 관리 페이지 라우트
-│   │   │   └── page.tsx
-│   │   ├── layout.tsx  # 루트 레이아웃
-│   │   └── page.tsx    # 루트 페이지 
-│   ├── components/   # UI 컴포넌트
-│   │   ├── layout/   # 레이아웃 관련 컴포넌트 
-│   │   └── table/    # 사용자 관리 기능 관련 컴포넌트
-│   │       └── UserTable.tsx
-│   ├── hooks/        # React Hooks
-│   │   ├── usePagination.tsx
-│   │   ├── useGetUsers.tsx
-│   │   ├── useagetUserDetails.tsx
-│   │   ├── useUpdateUser.tsx
-│   │   └── useDeleteUser.tsx
-|   |
-│   ├── lib/          # 라이브러리 설정
-|   |   └── externalAxiosClient.tsx    # 외부 API 호출용 Axios 클라이언트 설정
-│   │   └── axiosClient.tsx    # 내부 proxy용 Axios 클라이언트 설정
-│   ├── services/     # API 호출 로직 (비즈니스 로직)
-│   │   └── userService.tsx
-│   ├── queries/     # Query 키키
-│   │   └── userQueries.tsx
-│   ├── types/        # TypeScript 타입
-│   │   ├── common/
-│   │   └── user/
-│   └── utils/        # 기타 유틸리티
-│       └── columns/
-│           └── UserColumns.tsx # 테이블 컬럼 정의
-├── .env.local        # 환경 변수
-├── next.config.mjs   # Next.js 설정
-├── package.json
-├── README.md         # 프로젝트 설명 (현재 파일)
-└── tsconfig.json     # TypeScript 설정
+
 
 
 
@@ -120,7 +78,7 @@ danal-user-management/
     ```
 2.  **환경 변수 설정:**
     * 프로젝트 루트에 `.env.local` 파일을 생성합니다.
-    * 제공받은 `api_key`와 `auth_key`를 사용하여 아래 형식으로 환경 변수를 설정합니다. (Mockaroo Base URL 포함)
+    * 제공받은 `api_key`와 `auth_key`를 사용하고 아래 형식으로 환경 변수를 설정합니다.
         ```.env.local
         MOCKAROO_API_BASE_URL_PREFIX=[https://fabricate.mockaroo.com/api/v1/workspaces/danal/databases]
         MOCKAROO_API_KEY=API_KEY
@@ -135,7 +93,7 @@ danal-user-management/
     ```bash
     npm run dev
     ```
-    * 브라우저에서 `http://localhost:3000`로 접속합니다. 루트 페이지는 
+    * 브라우저에서 `http://localhost:3000`로 접속합니다.
 
 5.  **Storybook 실행 (컴포넌트 확인):**
     ```bash
