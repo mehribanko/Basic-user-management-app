@@ -8,13 +8,13 @@ API 명세에 맞춰 사용자 데이터를 조회, 검색, 상세 확인, 수�
 ## 2. 사용 기술 스택
 
 * **Framework:** Next.js (v14 App Router)
-* **UI Library:** React (v18)
-* **Language:** TypeScript
+* **UI:** React (v18)
+* **언어어:** TypeScript
 * **Styling:** Tailwind CSS (Layout) 및 Material UI (MUI v5 Components)
-* **State Management:** React Query (TanStack Query v5), React Hooks
-* **Data Fetching:** Axios (custom client)
-* **Form Management:** React Hook Form
-* **Component Development/Testing:** Storybook (v8), Mock Service Worker (MSW)
+* **State 관리:** React Query (TanStack Query v5), React Hooks
+* **Data 호출:** Axios (custom client)
+* **Form 관리:** React Hook Form
+* **Component Testing:** Storybook (v8), Mock Service Worker (MSW)
 * **Version Control:** Git & GitHub
 
 ### 기술 스택 선정 이유
