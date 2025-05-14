@@ -1,5 +1,5 @@
 import { useMutation, type UseMutationResult, useQueryClient } from '@tanstack/react-query';
-import { updateUser } from '@/services/userService'; // Import the service function
+import { updateUser } from '@/services/userService';
 import { CommonResponse } from '@/lib/axiosClient';
 import { userQueryKeys } from '@/queries/user/userQueries';
 import { UpdateUserData } from '@/types/user/UserTypes';
